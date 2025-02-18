@@ -22,14 +22,14 @@ A vending machine needs to manage different states, including "Idle", "ItemSelec
 1. **Define VendingMachine States:**
    - Create separate classes representing different machine states: IdleStae, ItemSelectedState, DispensingState, and OutOfOrder.
 2. **Implement State Interface:**
-  - Define an interface VendingMachineState with methods for common actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder.
-3. **Implement State Behaviors:**
-  - Each concrete state class implements the VendingMachineState interface, providing specific behavior for its respective state. For example, the IdleState class would allow item selection, while the OutOfOrderState wouldn't allow any operations.
+   - Define an interface VendingMachineState with methods for common actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder.
+4. **Implement State Behaviors:**
+   - Each concrete state class implements the VendingMachineState interface, providing specific behavior for its respective state. For example, the IdleState class would allow item selection, while the OutOfOrderState wouldn't allow any operations.
 4. **Update VendingMachine Class**
-  - Include attributes for item inventory and balance.
-  - Remove state-specific logic from the VendingMachine class.
-  - Introduce a reference to the current VendingMachineState object.
-  - Delegate actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder to the current state object through its corresponding methods.
+   - Include attributes for item inventory and balance.
+   - Remove state-specific logic from the VendingMachine class.
+   - Introduce a reference to the current VendingMachineState object.
+   - Delegate actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder to the current state object through its corresponding methods.
 
 ### UML Diagram
 
