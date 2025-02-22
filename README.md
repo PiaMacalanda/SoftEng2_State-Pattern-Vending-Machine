@@ -32,6 +32,7 @@ A vending machine needs to manage different states, including "Idle", "ItemSelec
    - Delegate actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder to the current state object through its corresponding methods.
 
 ### UML Diagram
+![Image](https://github.com/user-attachments/assets/1970306d-9255-49b9-b34e-a3a7b66316b0)
 
     
    
